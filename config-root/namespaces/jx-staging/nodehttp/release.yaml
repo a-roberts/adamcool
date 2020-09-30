@@ -1,0 +1,51 @@
+# Source: nodehttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-09-30T13:52:47Z"
+  deletionTimestamp: null
+  name: 'nodehttp-1.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.1
+      sha: d3534ede1701762086f6526d22f5a76ec017e0c7
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.1
+      sha: eb46febca0d2c0235dc52cd1ec421ed11a84b6b7
+  gitCloneUrl: https://github.com/a-roberts/nodehttp.git
+  gitHttpUrl: https://github.com/a-roberts/nodehttp
+  gitOwner: a-roberts
+  gitRepository: nodehttp
+  name: 'nodehttp'
+  releaseNotesURL: https://github.com/a-roberts/nodehttp/releases/tag/v1.0.1
+  version: v1.0.1
+status: {}
