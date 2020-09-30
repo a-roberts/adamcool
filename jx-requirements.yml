@@ -11,7 +11,7 @@ cluster:
   clusterName: kind
   devEnvApprovers:
   - todo
-  environmentGitOwner: todo
+  environmentGitOwner: a-roberts
   gitKind: github
   gitName: github
   gitServer: https://github.com
@@ -82,4 +82,3 @@ velero:
 versionStream:
   ref: master
   url: https://github.com/jenkins-x/jxr-versions.git
-webhook: lighthouse
