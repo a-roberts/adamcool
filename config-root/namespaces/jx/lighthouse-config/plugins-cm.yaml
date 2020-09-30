@@ -6,6 +6,10 @@ data:
       repos:
       - a-roberts/adamcool
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - a-roberts/nodehttp
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -37,6 +41,22 @@ data:
       - override
       - dog
       - pony
+      a-roberts/nodehttp:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -49,6 +69,11 @@ data:
     - repos:
       - a-roberts/adamcool
       trusted_org: a-roberts
+    - repos:
+      - a-roberts/nodehttp
+      trusted_org: a-roberts
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
