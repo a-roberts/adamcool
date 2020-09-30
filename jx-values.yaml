@@ -12,7 +12,7 @@ jxRequirements:
     clusterName: kind
     devEnvApprovers:
     - todo
-    environmentGitOwner: todo
+    environmentGitOwner: a-roberts
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -83,4 +83,4 @@ jxRequirements:
   versionStream:
     ref: master
     url: https://github.com/jenkins-x/jxr-versions.git
-  webhook: lighthouse
+  webhook: prow

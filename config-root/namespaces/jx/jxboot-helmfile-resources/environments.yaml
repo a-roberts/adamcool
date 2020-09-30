@@ -16,7 +16,7 @@ spec:
   label: Development
   namespace: jx
   promotionStrategy: "Never"
-  webHookEngine: "Lighthouse"
+  webHookEngine: "Prow"
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
     buildPackRef: "master"
@@ -26,7 +26,7 @@ spec:
       kind: Scheduler
       name: default
     dockerRegistryOrg: ""
-    envOrganisation: todo
+    envOrganisation: a-roberts
     gitServer: https://github.com
     gitPublic: true
     helmTemplate: true

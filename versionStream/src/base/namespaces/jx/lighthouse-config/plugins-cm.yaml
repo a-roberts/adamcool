@@ -48,7 +48,7 @@ data:
     triggers:
     - repos:
       - a-roberts/adamcool
-      trusted_org: todo
+      trusted_org: a-roberts
 kind: ConfigMap
 metadata:
   creationTimestamp: null
