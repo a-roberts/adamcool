@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: a-roberts
+    provider: github
+    repository: nodehttp
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: a-roberts-nodehttp
+spec:
+  httpCloneURL: https://github.com/a-roberts/nodehttp.git
+  org: a-roberts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodehttp
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/a-roberts/nodehttp
