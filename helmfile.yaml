@@ -73,7 +73,7 @@ releases:
   name: pusher-wave
   namespace: secret-infra
 - chart: dev/nodehttp
-  version: 1.0.1
+  version: 1.0.3
   name: nodehttp
   namespace: jx-staging
 templates: {}
